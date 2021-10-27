@@ -1,0 +1,112 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+  <defs>
+    <clipPath id="shape">
+      <path id="blob" d="M413.5,341.5Q355,433,253.5,427Q152,421,91.5,335.5Q31,250,84.5,153.5Q138,57,232,88Q326,119,399,184.5Q472,250,413.5,341.5Z" fill="none" stroke-width="7px" stroke="#d1d8e0"></path>
+    </clipPath>
+  </defs>
+  <image x="0" y="0" width="100%" height="100%" clip-path="url(#shape)" xlink:href="https://source.unsplash.com/5PVXkqt2s9k/500x500" preserveAspectRatio="none"></image>
+</svg>
+<svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+	<defs>
+		<clipPath id="blob">
+			<path fill="#474bff" d="M398.5,307Q317,374,228.5,393.5Q140,413,112,326.5Q84,240,120.5,168.5Q157,97,246,86.5Q335,76,407.5,158Q480,240,398.5,307Z" />
+		</clipPath>
+	</defs>
+	<image x="0" y="0" width="100%" height="100%" clip-path="url(#blob)" xlink:href="https://source.unsplash.com/random/600x600/?landscape" preserveAspectRatio="xMidYMid slice"></image>
+</svg>
+
+<section class="portfolio section" id="portilio">
+           <h3 class="section__title">Portifolio</h3>
+           <span class="section__subtitle">Trabalho mais recente</span>
+           
+           <div class="portfolio__container container swiper mySwiper">
+               <div class="swiper-wrapper">
+                   <div class="portfolio__content grid swiper-slide">
+                       <img src="https://picsum.photos/id/237/200/300" alt="" class="portfolio__img">
+                       <div class="portfolio__data">
+                           <h3 class="portfolio__title">Lorem ipsum dolor sit a</h3>
+                           <p class="portifolio__description">Lorem ipsum dolor sit, consectetur adipisicing elit. Reiciendis eum itaque ducimus, rem excepturi accusantium labore autem illum consequatur porro nulla. Tempore, natus placeat voluptates autem excepturi hic unde dignissimos.</p>
+                           <a href="" class="button button--flex button--small portfolio__button">
+                               Demo
+                               <i class="ri-arrow-right-line button__icon"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <div class="portfolio__content grid swiper-slide">
+                    <img src="https://picsum.photos/id/237/200/300" alt="" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Lorem ipsum dolor sit </h3>
+                        <p class="portifolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eum itaque ducimus, rem excepturi accusantium labore autem illum consequatur porro nulla. Tempore, natus placeat voluptates autem excepturi hic unde dignissimos.</p>
+                        <a href="" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="ri-arrow-right-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+               </div>
+               <div class="swiper-button-next"> <i class="ri-arrow-right-s-line swiper-portfolio-icon"></i></div>
+                <div class="swiper-button-prev"> <i class="ri-arrow-left-s-line swiper-portfolio-icon"></i></div>
+                <div class="swiper-pagination"></div>
+           </div>
+        </section>
+
+        <================CSS====================>
+.portfolio__container{
+  overflow: initial;
+}
+
+.portfolio__content{
+  padding: 0 1.5rem;
+}
+
+.portfolio__img{
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center; 
+}
+.portifolio__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+  margin-bottom: var(--mb-0-75) ;
+}
+
+.portfolio__button:hover .button__icon{
+  transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
+
+.swiper-portfolio-icon{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-next, .swiper-button-prev{
+  left: -.5rem;
+}
+
+.swiper-button-next{
+  right: -.5rem;
+ 
+}
+
+.swiper-pagination-horizontal{
+  top: 0.1rem;
+}
+
+.swiper-pagination-bullets-active{
+  background-color: #14505c;
+ 
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets{
+  outline: none;
+}
